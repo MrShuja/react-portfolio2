@@ -56,7 +56,7 @@ export const textVariant = (delay) => ({
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1.25,
+      duration: 2.25,
       delay,
     },
   },
@@ -146,8 +146,8 @@ export const staggerChildren = {
 
 
 export const getMenuStyles = (menuOpened) => {
-  if (document.documentElement.clientWidth <= 640) {
-    console.log("outside of sidebar reached")
-    return { right: !menuOpened && "-100%" };
+  if (document.documentElement.clientWidth <= 680) {
+        return { right: !menuOpened && "-100%" };
   }
+  
 };
